@@ -1,10 +1,10 @@
 import React from 'react';
-import BeatsContainer from './ BeatsContainer';
+import Router from './Router'
 
 const App = () => {
     return (
         <div>
-            <BeatsContainer />
+            <Router />
         </div>
     );
 };
