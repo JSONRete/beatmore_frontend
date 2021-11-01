@@ -16,14 +16,12 @@ class Beatsform extends Component {
         this.setState({
             [name]: value
         })
-
     }
 
     submitForm = event => {
         event.preventDefault()
         this.props.addBeat(this.state)
     }
-
 
     render() {
         return (

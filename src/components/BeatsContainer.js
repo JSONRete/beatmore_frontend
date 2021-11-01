@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchBeats } from '../actions/beatActions'
-import Beatsform from './BeatsForm'
+
+import BeatsList from './BeatsList'
 
 class BeatsContainer extends Component {
  
@@ -15,7 +16,7 @@ class BeatsContainer extends Component {
             <div>
 
                 Beats Container
-                <Beatsform />
+                <BeatsList />
                 
             </div>
         )
