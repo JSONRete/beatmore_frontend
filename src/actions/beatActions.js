@@ -1,23 +1,32 @@
+const url = 'http://127.0.0.1:3000/beats'
+
+export const loadBeats = (beats) => ({type: 'FETCH_BEATS', payload: beats})
+export const addBeat = (beat) => ({type: 'ADDED_BEAT', payload: beat})
+
 export const fetchBeats = () => {
+    console.log("LOG: B")
     return (dispatch) => {
-        fetch('http://127.0.0.1:3000/beats')
+        dispatch({type: "LOADING"})
+        fetch(url)
         .then(res => res.json())
-        .then(beats => dispatch({type: 'FETCH_BEATS', payload: beats}))
+        .then(json => {
+            dispatch(loadBeats(json))
+    console.log("LOG: F")
+    })
+    console.log("LOG: C")
     }
 }
 
-export const addBeat = beat => {
+export const createBeat = beat => {
     return (dispatch) => {
-        fetch('http://127.0.0.1:3000/beats', {
+        fetch(url, {
             method: 'POST',
             body: JSON.stringify(beat),
             headers: { 'Content-Type': 'application/json' }
-    
         })
         .then(res => res.json())
-        .then(beat => dispatch({type: 'ADD_BEAT', payload: beat}))
+        .then(beat => dispatch({type: 'ADDED_BEAT', payload: beat}))
     }
 }
 
 
- 

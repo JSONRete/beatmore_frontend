@@ -10,6 +10,7 @@ const BeatsList = ({ beats }) => {
 };
 
 const mapStateToProps = state => {
+    console.log("test", state)
     return {beats: state.beats }
 }
 
