@@ -18,14 +18,15 @@ class Beatsform extends Component {
         })
     }
 
-    submitForm = event => {
+    handleSubmit = event => {
         event.preventDefault()
         this.props.createBeat(this.state)
+        this.props.history.push("/beats");
     }
 
     render() {
         return (
-            <form onSubmit={this.submitForm}>
+            <form onSubmit={this.handleSubmit}>
                 <label className="beatForm">Artist:</label>
                 <input type='text' value={this.state.artist} onChange={this.textUpdating} name='artist' placeholder="enter artist name" />
                 < br />

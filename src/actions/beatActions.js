@@ -19,14 +19,18 @@ export const fetchBeats = () => {
 
 export const createBeat = beat => {
     return (dispatch) => {
-        fetch(url, {
+        const configObject = {
             method: 'POST',
             body: JSON.stringify(beat),
             headers: { 'Content-Type': 'application/json' }
-        })
+        }
+        fetch(url, configObject)
         .then(res => res.json())
-        .then(beat => dispatch({type: 'ADDED_BEAT', payload: beat}))
+        .then(json => {
+            dispatch(addBeat(json))
+        })
     }
 }
+
 
 
