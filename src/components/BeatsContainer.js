@@ -8,7 +8,9 @@ import BeatsList from './BeatsList'
 class BeatsContainer extends Component {
  
     componentDidMount() {
+        console.log("LOG: A")
         this.props.fetchBeats()
+        console.log("LOG: D")
     }
 
     render() {
