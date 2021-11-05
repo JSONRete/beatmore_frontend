@@ -1,11 +1,14 @@
 import React from 'react';
+import background from '../images/test.png'
 
 const Home = () => {
     return (
-        <div>
-            Beatmore
-        </div>
+        
+        <div style={{ backgroundImage: `url(${background})` }}>
+        test
+    </div>
     );
 };
 
 export default Home;
+
