@@ -1,56 +1,40 @@
 // src/Navbar.js
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../css/navbar.css"
 
-const link = {
-  width: "100px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white",
-};
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <div>
+
+const Navbar = () => {
+  return (
+      <div className="Nav">
         <NavLink
+          activeStyle={{ background: "#ff9035" }}
           to="/"
-          /* set exact so it knows to only set activeStyle when route is deeply equal to link */
+          className="base-nav"
           exact
-          /* add styling to Navlink */
-          style={link}
-          /* add prop for activeStyle */
-          activeStyle={{
-            background: "darkblue",
-          }}
         >
           Home
         </NavLink>
         <NavLink
+        activeStyle={{ background: "#ff9035" }}
           to="/beats"
+          className="base-nav"
           exact
-          style={link}
-          activeStyle={{
-            background: "darkblue",
-          }}
         >
           Beats
         </NavLink>
         <NavLink
+        activeStyle={{ background: "#ff9035" }}
           to="/new"
+          className="base-nav"
           exact
-          style={link}
-          activeStyle={{
-            background: "darkblue",
-          }}
         >
           New Beat
         </NavLink>
       </div>
     );
   }
-}
+
 
 export default Navbar;

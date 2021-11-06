@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom'
 import beatsReducer from "./reducers/beatsReducer";
+import "./css/index.css"
 
 import App from './components/App'
 

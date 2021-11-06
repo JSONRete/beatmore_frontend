@@ -1,0 +1,37 @@
+.Nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+}
+
+.base-nav:active {
+    color: rgba(245, 142, 7, 0.082);
+    background-color: #ff9035;
+    box-shadow: 0 14px rgb(0, 235, 31);
+    transform: translateY(22px);
+}
+
+.base-nav{
+  display: inline-block;
+  padding: 12px 26px;
+  font-size: 24px;
+  cursor: auto;
+  text-align: center;
+  text-decoration-thickness: 4px;
+  outline-color: #ff3535;
+  color: rgb(132, 4, 252);
+  background-color: #ff9035;
+  border: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px rgba(226, 3, 77, 0.199);
+  
+}
+.base-nav:hover {
+    color: rgba(247, 247, 6, 0.911);
+    box-shadow: 0 12px 16px 0 rgba(245, 0, 0, 0.774), 0 17px 99px 0 rgba(44, 8, 253, 0.19);
+}
+
