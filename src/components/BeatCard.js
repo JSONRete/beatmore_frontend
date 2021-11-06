@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 const BeatCard = (props) => {
 
     const {id ,artist, song, producer, media} = props.beat
-    // console.log("BeatCardlog", props)
+    // console.log("BeatCardLog", props)
 
     return (
         <div>
@@ -13,19 +13,17 @@ const BeatCard = (props) => {
                 <h4>Producer: {producer}</h4>  
             </div>
             <div style={{ width: "15rem", height: "10rem" }}>
-                <h4>Song: {song}</h4>
                 <ReactPlayer
+                className='react-player'
                 url={media}
-                width="100%"
-                height="100%"
-                origin={window.location.origin}
+                width='100%'
+                height='100%'
                 />
                 <h4>Artist: {artist}</h4>
+                <h4>Song: {song}</h4>
             </div> 
         </div>
     );
 };
 
 export default BeatCard;
-
-
