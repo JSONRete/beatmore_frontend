@@ -11,7 +11,7 @@
 .base-nav:active {
     color: rgba(245, 142, 7, 0.082);
     background-color: #ff9035;
-    box-shadow: 0 14px rgb(0, 235, 31);
+    box-shadow: 0 14px rgba(247, 247, 6, 0.911);;
     transform: translateY(22px);
 }
 
@@ -26,7 +26,7 @@
   color: rgb(132, 4, 252);
   background-color: #ff9035;
   border: 12px;
-  border-radius: 10px;
+  border-radius: 99px;
   box-shadow: 0 4px rgba(226, 3, 77, 0.199);
   
 }
