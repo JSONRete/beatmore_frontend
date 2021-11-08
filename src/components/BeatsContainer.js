@@ -16,10 +16,7 @@ class BeatsContainer extends Component {
     render() {
         return (
             <div>
-
-                Beats Container
                 <BeatsList />
-                
             </div>
         )
     }
