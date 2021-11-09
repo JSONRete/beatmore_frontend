@@ -17,7 +17,7 @@ Run following from terminal:
 ---
 `For:` [Frontend](https://github.com/JSONRete/beatmore_frontend)
 
-With the backend server running, from the frontend run **'npm install && npm start'** and run on **Local: http://localhost:3XXX** in your preferred web browser. 
+With the backend server running, from the frontend run **'npm install && npm start'** and run on **Local: http://localhost:3XXX'** in your preferred web browser. 
 
 ## Usage
 
