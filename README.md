@@ -1,71 +1,49 @@
-# Getting Started with Create React App
+# Beatmore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Beatmore** is a _Single Page Application_ with the backend built with _Ruby on Rails_ which is representative of the models and controllers of the MVC software design pattern. This _SPA_ handles the views of the application with _JavaScript_, _HTML_, & _CSS_. **Beatmore** allows you to save media of your favorite beat production.
 
-## Available Scripts
+## Installing / Getting started
 
-In the project directory, you can run:
+`For:` [Backend](https://github.com/JSONRete/beatmore_backend)
 
-### `yarn start`
+Run following from terminal:
+```
+- bundle install
+- rails db:create
+- rails db:migrate
+- rails db:seed
+- rails server
+```
+---
+`For:` [Frontend](https://github.com/JSONRete/beatmore_frontend)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+With the backend server running, from the frontend run **'npm install && npm start'** and run on **Local: http://localhost:3XXX** in your preferred web browser. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
 
-### `yarn test`
+This _Single Page Application_ will function on a local server simulating an online experience. Use the Ruby on Rails Server or your preferred environment and web browser to accomplish this.
+[Rails Server](https://guides.rubyonrails.org/getting_started.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `yarn build`
+Ruby on Rails, Ruby, Active Record, Html, CSS, JavaScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+```ruby
+Ruby
+```
+```google chrome
+Google Chrome
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Version
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**0.1.0**
 
-### `yarn eject`
+## Contributors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- JaSON Rete
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Licensing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# beatmore_frontend
+This application is licensed under the [MIT License](LICENSE).
