@@ -1,17 +1,16 @@
 import React from 'react';
-import background from '../images/test.png'
+import background from '../images/home.png'
 import "../css/home.css"
 
 const Home = () => {
     return (
-        <div>
-       
-        <img
-        className="home"
-        src={background}
-        alt="home"
-      />
-    </div>
+      <div>
+          <img
+          className="home"
+          src={background}
+          alt="home"
+        />
+      </div>
     );
 };
 
