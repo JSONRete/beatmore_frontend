@@ -18,8 +18,8 @@ class BeatsList extends React.Component{
         //     {beats.map( beat => <ul  key={beat.id}><li>{beat.artist} - {beat.song} - {beat.producer} - {beat.media}</li></ul> )}
         // </div>
         <div className="beats">
-        {this.props.loading ? <h1>LOADING....</h1> : this.makeBeats()}
-      </div>
+            {this.props.loading ? <h1>LOADING....</h1> : this.makeBeats()}
+        </div>
 
 //     <div className="beats">
 //     {this.makeBeats()}
