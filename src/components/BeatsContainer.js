@@ -6,7 +6,7 @@ import { fetchBeats } from '../actions/beatActions'
 import BeatsList from './BeatsList'
 
 class BeatsContainer extends Component {
- 
+    
     componentDidMount() {
         console.log("LOG: A")
         this.props.fetchBeats()
