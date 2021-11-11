@@ -10,7 +10,7 @@ const BeatCard = (props) => {
 
     return (
         <div className='beat-card' id={`beat-${id}`}>
-             <h4>Producer: {producer}</h4>  
+            <h4>Producer: {producer}</h4>  
             <div>
             <div style={{ width: "15rem", height: "10rem" }}>
                 <ReactPlayer
