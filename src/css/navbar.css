@@ -16,19 +16,18 @@
 }
 
 .base-nav{
-  display: inline-block;
-  padding: 12px 26px;
-  font-size: 24px;
-  cursor: auto;
-  text-align: center;
-  text-decoration-thickness: 4px;
-  outline-color: #ff3535;
-  color: rgb(132, 4, 252);
-  background-color: rgba(247, 247, 6, 0.911);
-  border: 12px;
-  border-radius: 7px;
-  box-shadow: 0 4px rgba(226, 3, 77, 0.199);
-  
+    display: inline-block;
+    padding: 12px 26px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration-thickness: 4px;
+    outline-color: #ff3535;
+    color: rgb(132, 4, 252);
+    background-color: rgba(247, 247, 6, 0.911);
+    border: 12px;
+    border-radius: 7px;
+    box-shadow: 0 4px rgba(226, 3, 77, 0.199);
 }
 .base-nav:hover {
     color: rgba(247, 247, 6, 0.911);
