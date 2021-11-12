@@ -11,7 +11,7 @@ import "./css/index.css"
 import App from './components/App'
 
 const store = createStore(beatsReducer, composeWithDevTools(applyMiddleware(thunk)))
-console.log(store)
+console.log("'store' from index.js", store)
 
 ReactDOM.render(
     <Provider store={store}>
@@ -21,5 +21,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 )
-
- 
