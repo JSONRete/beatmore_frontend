@@ -11,6 +11,7 @@ const Router = () => {
             <Route exact path='/' component={Home} />
             <Route exact path='/beats' component={BeatsContainer} />
             <Route exact path='/new' component={BeatsForm} />
+            <Route path ="*" render={() => <h1 id="error">NO SUCH PAGE</h1>} />
         </Switch>
     );
 };
