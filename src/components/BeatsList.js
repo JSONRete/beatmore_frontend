@@ -30,7 +30,7 @@ class BeatsList extends React.Component{
 }
     render() {
 
-        
+        console.log("loading", this.props.loading)
         return (
             <div className="beats">
                 <FilterField handleChange={this.inputChange}/>
@@ -42,7 +42,11 @@ class BeatsList extends React.Component{
 
 const mapStateToProps = state => {
     // console.log("test", state)
-    return {beats: state.beats }
+    return {
+        beats: state.beats,
+        loading: state.loading
+     }
+    
 }
 
 
