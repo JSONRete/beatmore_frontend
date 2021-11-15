@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BeatCard from './BeatCard';
 import FilterField from './FilterField';
 
 
-class BeatsList extends React.Component{
+class BeatsList extends Component {
 
     state = {
         search: ""
@@ -26,11 +26,11 @@ class BeatsList extends React.Component{
 
 
     makeBeats(){
-        return this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />)
+        return this.props.loading ? <h1>LOADING....</h1> : this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />)
 }
     render() {
 
-        console.log("loading", this.props.loading)
+        // console.log("loading", this.props.loading)
         return (
             <div className="beats">
                 <FilterField handleChange={this.inputChange}/>
