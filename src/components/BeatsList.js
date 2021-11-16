@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BeatCard from './BeatCard';
 import FilterField from './FilterField';
-
+import { ScaleLoader } from 'react-spinners';
+import "../css/beatslist.css"
 
 class BeatsList extends Component {
 
@@ -26,15 +27,25 @@ class BeatsList extends Component {
 
 
     makeBeats(){
-        return this.props.loading ? <h1>LOADING....</h1> : this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />)
+        return this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />)
 }
+// makeBeats(){
+//     return this.props.beats.length > 0 ? this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />) : <ScaleLoader />
+// }
+
     render() {
 
         // console.log("loading", this.props.loading)
         return (
-            <div className="beats">
+            <div className="beats-list">
                 <FilterField handleChange={this.inputChange}/>
-                {this.props.loading ? <h1>LOADING....</h1> : this.makeBeats()}
+                {this.props.loading ? <h1><ScaleLoader
+                    // type="Puff"
+                    color="#F7F706"
+                    height={50}
+                    width={100}
+                    // timeout={3000} //3 secs
+                  /></h1> : this.makeBeats()}
             </div>
     );
         }
