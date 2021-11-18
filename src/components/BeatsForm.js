@@ -24,6 +24,12 @@ class Beatsform extends Component {
     handleSubmit = event => {
         event.preventDefault()
         this.props.createBeat(this.state)
+        this.setState({
+            artist: '',
+            song: '',
+            producer: '',
+            media: ''
+        })
         this.props.history.push("/beats");
     }
 
