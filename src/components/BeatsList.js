@@ -40,11 +40,9 @@ class BeatsList extends Component {
             <div className="beats-list">
                 <FilterField handleChange={this.inputChange}/>
                 {this.props.loading ? <h1><ScaleLoader
-                    // type="Puff"
                     color="#F7F706"
-                    height={50}
-                    width={100}
-                    // timeout={3000} //3 secs
+                    height={75}
+                    width={75}
                   /></h1> : this.makeBeats()}
             </div>
     );
@@ -59,6 +57,5 @@ const mapStateToProps = state => {
      }
     
 }
-
 
 export default connect(mapStateToProps)(BeatsList);
