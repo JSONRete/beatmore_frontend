@@ -23,6 +23,7 @@ const BeatCard = (props) => {
                 </div>
                 <h4>Artist: {artist}</h4>
                 <h4>Song: {song}</h4>
+                <button>Button</button>
         </div>
     );
 };
