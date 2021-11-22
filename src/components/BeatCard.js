@@ -1,5 +1,6 @@
 import ReactPlayer from "react-player";
 import React from 'react';
+import { Link } from "react-router-dom";
 import "../css/beatcard.css"
 
 
@@ -23,7 +24,10 @@ const BeatCard = (props) => {
                 </div>
                 <h4>Artist: {artist}</h4>
                 <h4>Song: {song}</h4>
-                <button>Button</button>
+      
+              <button className="deleteButton" >
+                Delete
+              </button>
         </div>
     );
 };
