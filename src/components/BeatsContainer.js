@@ -22,4 +22,11 @@ class BeatsContainer extends Component {
     }
 }
 
-export default connect(null, { fetchBeats })(BeatsContainer)
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchBeats: () => dispatch(fetchBeats())
+    }
+}
+
+export default connect(null, mapDispatchToProps)(BeatsContainer)
+// export default connect(null, { fetchBeats })(BeatsContainer)
