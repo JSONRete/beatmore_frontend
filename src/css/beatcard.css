@@ -18,7 +18,7 @@ body{
     width: 100px;
 }
 
-  .deleteButton {
+.deleteButton {
     margin: 2em auto; 
     -webkit-appearance: none;
     border: 3px solid rgba(247, 247, 6, 0.911);
@@ -33,4 +33,8 @@ body{
     font-weight: 200;
     color: rgba(247, 247, 6, 0.911);
     cursor: pointer;
-  }
+}
+
+.deleteButton {
+    background-image: linear-gradient(90deg, rgb(132, 4, 252), rgba(245, 0, 0, 0.774));
+}
