@@ -29,8 +29,8 @@ body{
     background-clip: padding-box;
     position: relative;
     font-family: Orbitron;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 200;
     color: rgba(247, 247, 6, 0.911);
     cursor: pointer;
 }
