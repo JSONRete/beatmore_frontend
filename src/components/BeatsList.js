@@ -35,7 +35,7 @@ class BeatsList extends Component {
 
     render() {
 
-        // console.log("loading", this.props.loading)
+        // console.log("loading from BeatsList", this.props.loading)
         return (
             <div className="beats-list">
                 <FilterField handleChange={this.inputChange}/>
@@ -43,7 +43,7 @@ class BeatsList extends Component {
                     color="#F7F706"
                     height={75}
                     width={75}
-                  /></h1> : this.makeBeats()}
+                /></h1> : this.makeBeats()}
             </div>
     );
         }
@@ -54,8 +54,7 @@ const mapStateToProps = state => {
     return {
         beats: state.beats,
         loading: state.loading
-     }
+}
     
 }
-
 export default connect(mapStateToProps)(BeatsList);
