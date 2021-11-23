@@ -1,11 +1,11 @@
 import React from 'react';
 import "../css/filterfield.css"
 
-const FilterField = (p) => {
+const FilterField = (producer) => {
     return (
         <div id="filter-field">
             <label htmlFor="filter">Filter by Producer</label>
-            <input type="text" placeholder="enter producer name" onChange={p.handleChange}/>
+            <input type="text" placeholder="enter producer name" onChange={producer.handleChange}/>
         </div>
     );
 };
