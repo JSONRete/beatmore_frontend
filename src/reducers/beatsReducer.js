@@ -9,8 +9,15 @@
         case 'ADDED_BEAT':
             // return {...state, beats: [...state.beats, action.payload]}
             return {beats: [...state.beats, action.payload], ...state}
+        case "DELETE_BEAT":
+          return {...state, beats: state.beats.filter(beat => beat.id !== action.payload.id)}
+      //   const filteredBeat = state.beats.filter(
+      //   (beat) => beat.id !== action.payload.id
+      // );
+      // return { ...state, beat: filteredBeat};
         default:
             return state
     }
   }  
 
+  
