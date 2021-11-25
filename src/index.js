@@ -12,7 +12,7 @@ import App from './components/App'
 
 const store = createStore(beatsReducer, composeWithDevTools(applyMiddleware(thunk)))
 console.log("'store' from index.js", store)
-
+// debugger
 ReactDOM.render(
     <Provider store={store}>
         <Router>
