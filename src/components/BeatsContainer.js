@@ -10,7 +10,7 @@ class BeatsContainer extends Component {
     componentDidMount() {
         console.log("LOG: A")
         this.props.fetchBeats()
-        console.log("LOG: D")
+        console.log("LOG: B")
     }
 
     render() {
