@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createBeat  } from '../actions/beatActions';
-import "../css/beatform.css"
+import { createBeat  } from '../../actions/beatActions';
+import "../../css/beats/beatform.css"
 
 
 class Beatsform extends Component {

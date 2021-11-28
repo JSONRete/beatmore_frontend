@@ -1,9 +1,9 @@
 import ReactPlayer from "react-player";
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import "../css/beatcard.css"
+import "../../css/beats/beatcard.css"
 import { connect } from "react-redux";
-import { removeBeat } from "../actions/beatActions";
+import { removeBeat } from "../../actions/beatActions";
 
 
 class BeatCard extends Component {

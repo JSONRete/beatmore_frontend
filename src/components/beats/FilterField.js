@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/filterfield.css"
+import "../../css/beats/filterfield.css"
 
 const FilterField = (producer) => {
     return (

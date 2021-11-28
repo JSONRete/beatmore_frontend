@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import BeatCard from './BeatCard';
 import FilterField from './FilterField';
 import { ScaleLoader } from 'react-spinners';
-import "../css/beatslist.css"
+import "../../css/beats/beatslist.css"
 
 class BeatsList extends Component {
 

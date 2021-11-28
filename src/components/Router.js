@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
 import Home from './Home';
-import BeatsContainer from './beats/BeatsContainer'
-import BeatsForm from './BeatsForm';
+import BeatsContainer from '../components/beats/BeatsContainer'
+import BeatsForm from '../components/beats/BeatsForm';
 
 const Router = () => {
     return (
