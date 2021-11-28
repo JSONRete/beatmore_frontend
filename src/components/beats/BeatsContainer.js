@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { fetchBeats } from '../actions/beatActions'
+import { fetchBeats } from '../../actions/beatActions'
 
 import BeatsList from './BeatsList'
 
