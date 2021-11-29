@@ -14,7 +14,7 @@ export const fetchBeats = () => {
             dispatch(loadBeats(json))
     console.log("LOG: D")
     })
-    // console.log("LOG: C")
+    console.log("LOG: C")
     }
 }
 
@@ -41,6 +41,10 @@ export const removeBeat = (beatId) => {
         "Content-Type": "application/json",
         },
     })
+
+    // .then(json => {
+    //     dispatch(addBeat(json))
+    // })
         .then(res => {
         if (res.ok) {
             dispatch(deleteBeat(beatId));
