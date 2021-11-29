@@ -5,12 +5,12 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom'
-import beatsReducer from "./reducers/beatsReducer";
+import { rootReducer } from "./reducers/rootReducer";
 import "./css/index.css"
 
 import App from './components/App'
 
-const store = createStore(beatsReducer, composeWithDevTools(applyMiddleware(thunk)))
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
 console.log("'store' from index.js", store)
 // debugger
 ReactDOM.render(
