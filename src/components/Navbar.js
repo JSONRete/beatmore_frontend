@@ -24,6 +24,14 @@ const Navbar = () => {
         </NavLink>
         <NavLink
         activeStyle={{ background: "#ff9035" }}
+          to="/producers"
+          className="base-nav"
+          exact
+        >
+          Producers
+        </NavLink>
+        <NavLink
+        activeStyle={{ background: "#ff9035" }}
           to="/new"
           className="base-nav"
           exact
