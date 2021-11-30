@@ -12,7 +12,7 @@ class BeatCard extends Component {
 
 
     handleClick = (event) => {
-              console.log("beatid", this)
+            //   console.log("beatid", this)
                 this.props.removeBeat(this.props.beat.id)
                 this.props.history.push("/");
     }
