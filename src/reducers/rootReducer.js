@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux'
 
-import { beatsReducer } from './beatsReducer'
-import { producersReducer } from './producersReducer'
+// import { beatsReducer } from './beatsReducer'
+// import { producersReducer } from './producersReducer'
+import beatsReducer from './beatsReducer'
+import producersReducer from './producersReducer'
 
-export const rootReducer = combineReducers ({
-    producers: producersReducer,
-    beats: beatsReducer
+const rootReducer = combineReducers ({
+    producersReducer: producersReducer,
+    beatsReducer: beatsReducer,
 })
+export default rootReducer
