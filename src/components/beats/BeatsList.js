@@ -15,22 +15,28 @@ class BeatsList extends Component {
         this.setState({search: event.target.value})
     }
 
-    filterProducer = (props) => {
-        return this.props.beats.filter( (p) => {
-            return p.producer.toLowerCase().includes(this.state.search.toLowerCase())
-        })
+    makeBeats = () => {
+        let filterBeatsField = []
+        // console.log("filterBeatsField", this.props.search)
+        if(this.props.beats){
+            filterBeatsField = this.props.beats.filter((p) =>  
+            p.producer.toLowerCase().includes(this.state.search.toLowerCase()))
+        }
+
+        return filterBeatsField.map(beat => <BeatCard key={beat.id} beat={beat} />)
     }
-    // componentDidMount() {
-    //     console.log("TESTING DID MOUNT, FROM_BEATLIST")
-    // }
-    makeBeats(props){
-        return this.props.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />)
-}
-// makeBeats(){
-//     return this.props.beats.length > 0 ? this.filterProducer().map(beat => <BeatCard key={beat.id} beat={beat} />) : <ScaleLoader />
+
+//     filterField = () => {
+//         this.props.beats.filter( (p) => {
+//             return p.producer.toLowerCase().includes(this.state.search.toLowerCase())
+//         })
+//     }
+
+//     makeBeats = () => {
+//         return this.filterField().map(beat => <BeatCard key={beat.id} beat={beat} />)
 // }
+
     render() {
-        console.log("loading from BeatsList", this.filterProducer)
         return (
             <div className="beats-list">
                 <FilterField handleChange={this.inputChange}/>
@@ -43,11 +49,12 @@ class BeatsList extends Component {
     );
         }
 };
+
 const mapStateToProps = state => {
-    // console.log("test", state)
+    console.log("test", state)
     return {
-        beats: state.beats,
-        loading: state.loading
+        beats: state.beatsReducer.beats,
+        // loading: state.loading
 }
     
 }
