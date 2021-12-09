@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class ProducersList extends Component {
+
     render() {
         return (
             <div>
@@ -15,4 +17,13 @@ class ProducersList extends Component {
     }
 }
 
-export default ProducersList;
+const mapStateToProps = state => {
+    console.log("test", state)
+    return {
+        artists: state.producersReducer.artists,
+        // loading: state.loading
+}
+
+}
+
+export default connect(mapStateToProps)(ProducersList);
