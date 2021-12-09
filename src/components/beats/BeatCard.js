@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import "../../css/beats/beatcard.css"
 import { connect } from "react-redux";
 import { removeBeat } from "../../actions/beatActions";
+import { Link } from "react-router-dom";
 
 
 class BeatCard extends Component {
@@ -22,7 +23,7 @@ class BeatCard extends Component {
         // console.log("BeatCardLog", props)
     return (
         <div className='beat-card' id={`beat-${id}`}>
-            <h4>Producer: {producer}</h4>  
+            <h4><Link>Producer: {producer}</Link></h4>  
             <div>
             <div style={{ width: "15rem", height: "10rem" }}>
                 <ReactPlayer
