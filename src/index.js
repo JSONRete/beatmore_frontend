@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom'
 import rootReducer from "./reducers/rootReducer";
+import reportWebVitals from "./reportWebVitals";
 
 import "./css/index.css"
 
@@ -21,4 +22,8 @@ ReactDOM.render(
         </Router>
     </Provider>,
     document.getElementById('root')
+    
 )
+
+
+reportWebVitals()
