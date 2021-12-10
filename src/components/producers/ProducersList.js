@@ -3,6 +3,16 @@ import { connect } from 'react-redux';
 
 class ProducersList extends Component {
 
+
+
+componentDidMount() {
+    fetch('http://localhost:3000/producer_pull')
+    .then(response => response.json())
+    .then(data => console.log(data));
+}
+
+
+
     render() {
         return (
             <div>
@@ -18,7 +28,7 @@ class ProducersList extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log("test", state)
+    console.log("test", this.state)
     return {
         artists: state.producersReducer.artists,
         // loading: state.loading
