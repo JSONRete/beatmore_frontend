@@ -8,9 +8,11 @@ import ProducersList from './ProducersList'
 class ProducersContainer extends Component {
 
 
-    componentDidMount() {
-        this.props.fetchProducers()
-    }
+    // componentDidMount() {
+    //     this.props.fetchProducers()
+    //     console.log("fetchProducers", this.testMethod())
+
+    // }
 
 
     render() {
