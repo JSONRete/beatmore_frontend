@@ -28,7 +28,7 @@ componentDidMount() {
 }
 
 const mapStateToProps = state => {
-    console.log("test", this.state)
+    console.log("test", state)
     return {
         artists: state.producersReducer.artists,
         // loading: state.loading
