@@ -7,12 +7,10 @@ import ProducersList from './ProducersList'
 
 class ProducersContainer extends Component {
 
+    componentDidMount() {
+        this.props.fetchProducers("Kanye West")
 
-    // componentDidMount() {
-    //     this.props.fetchProducers()
-    //     console.log("fetchProducers", this.testMethod())
-
-    // }
+    }
 
 
     render() {
@@ -26,7 +24,7 @@ class ProducersContainer extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchBeats: () => dispatch(fetchProducers())
+        fetchProducers: (name) => dispatch(fetchProducers(name))
     }
 }
 
