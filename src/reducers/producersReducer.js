@@ -3,7 +3,7 @@ const producersReducer = (state = {artists: [], loading: false}, action) => {
         case  "LOADING":
             return { ...state, loading: true };
         case 'FETCH_PRODUCERS':
-            return action.payload
+            return {...state, artists: action.payload, loading: false}
         default:
             return state
     }
