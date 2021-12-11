@@ -15,7 +15,7 @@ class BeatCard extends Component {
     handleClick = (event) => {
             //   console.log("beatid", this)
                 this.props.removeBeat(this.props.beat.id)
-                this.props.history.push("/");
+                this.props.history.push("/beats");
     }
             
     render() {
@@ -23,8 +23,7 @@ class BeatCard extends Component {
         // console.log("BeatCardLog", props)
     return (
         <div className='beat-card' id={`beat-${id}`}>
-            <h4><Link to="/producers">Producer: {producer}</Link></h4>  
-            <div>
+            <h4><Link to="/producers">Producer: {producer}</Link></h4>
             <div style={{ width: "15rem", height: "10rem" }}>
                 <ReactPlayer
                 className='react-player'
@@ -34,7 +33,6 @@ class BeatCard extends Component {
                 src="https://www.youtube.com/player_api"
                 />
                 </div> 
-                </div>
                 <h4>Artist: {artist}</h4>
                 <h4>Song: {song}</h4>
             <button className="deleteButton" onClick={this.handleClick}>
@@ -46,17 +44,12 @@ class BeatCard extends Component {
 
 }
 
-
-
 // const mapDispatchToProps = (dispatch) => {
 //     return {
 //         removeBeat: (beat) => dispatch(removeBeat(beat))
 //     }
 // }
 
-
 // export default connect (null, mapDispatchToProps)(BeatCard)
 export default withRouter(connect (null, { removeBeat } )(BeatCard))
-
-// export default BeatCard;
 
