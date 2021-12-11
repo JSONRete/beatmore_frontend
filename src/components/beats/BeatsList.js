@@ -26,15 +26,6 @@ class BeatsList extends Component {
         return filterBeatsField.map(beat => <BeatCard key={beat.id} beat={beat} />)
     }
 
-//     filterField = () => {
-//         this.props.beats.filter( (p) => {
-//             return p.producer.toLowerCase().includes(this.state.search.toLowerCase())
-//         })
-//     }
-
-//     makeBeats = () => {
-//         return this.filterField().map(beat => <BeatCard key={beat.id} beat={beat} />)
-// }
 
     render() {
         return (
