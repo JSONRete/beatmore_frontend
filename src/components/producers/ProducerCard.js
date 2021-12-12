@@ -9,12 +9,10 @@ class ProducerCard extends Component {
         return (
             <div className='artist-card' id={`artist-${id}`}>
             <h4><Link to="/producers">Producer: {name}</Link></h4>  
-
-                <h4>Producer: {name}</h4>
-                <h4>Producer: {name}</h4>
-                <h4>Producer: {name}</h4>
-         
-        
+                <h4>Producer: {gender}</h4>
+                <h4>Start: {beginArea}</h4>
+                <h4>Current: {area}</h4>
+                <h4>Life Span: {lifeSpan}</h4>
             </div>
         );
     }
