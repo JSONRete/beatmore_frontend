@@ -12,7 +12,6 @@ class ProducersContainer extends Component {
 
     }
 
-
     render() {
         return (
             <div>
