@@ -4,6 +4,11 @@ import { connect } from "react-redux"
 import { Link } from "react-router-dom";
 
 class ProducerCard extends Component {
+
+    state = {
+        name: ''
+    }
+
     render() {
         const {id ,name, gender, beginArea, area, lifeSpan} = this.props.producer
         return (
