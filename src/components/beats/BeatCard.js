@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 
 
 class BeatCard extends Component {
-
-
-
-
     handleClick = (event) => {
             //   console.log("beatid", this)
                 this.props.removeBeat(this.props.beat.id)
