@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchProducers} from '../../actions/producerActions'
+import ProducerCard from './ProducerCard';
 import ProducersList from './ProducersList'
+import TempForm from './TempForm';
 
 
 
@@ -15,7 +17,8 @@ class ProducersContainer extends Component {
     render() {
         return (
             <div>
-                <ProducersList />
+                
+                <TempForm />
             </div>
         );
     }
@@ -28,3 +31,12 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(null, mapDispatchToProps)(ProducersContainer);
+
+// render() {
+//     return (
+//         <div>
+//             <ProducersList />
+//             <TempForm />
+//         </div>
+//     );
+}
