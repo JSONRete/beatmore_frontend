@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { fetchProducers} from '../../actions/producerActions'
-import ProducerCard from './ProducerCard';
+import { searchProducers } from '../../actions/producerActions'
+import { fetchProducers } from '../../actions/producerActions';
 import ProducersList from './ProducersList'
-import TempForm from './TempForm';
+import ProducersForm from './ProducersForm';
 
 
 
 class ProducersContainer extends Component {
 
     componentDidMount() {
-        this.props.fetchProducers("Kanye West")
+        this.props.fetchProducers()
+        this.props.searchProducers("Kanye West")
 
     }
 
@@ -18,7 +19,7 @@ class ProducersContainer extends Component {
         return (
             <div>
                 <ProducersList />
-                <TempForm />
+                <ProducersForm />
             </div>
         );
     }
@@ -26,7 +27,8 @@ class ProducersContainer extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchProducers: (name) => dispatch(fetchProducers(name))
+        searchProducers: (name) => dispatch(searchProducers(name)),
+        fetchProducers: () => dispatch(fetchProducers())
     }
 }
 
