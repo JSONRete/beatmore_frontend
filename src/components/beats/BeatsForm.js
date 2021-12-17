@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createBeat  } from '../../actions/beatActions';
+import { createBeat } from '../../actions/beatActions';
 import "../../css/beats/beatform.css"
 
-
 class Beatsform extends Component {
-
     state = {
         artist: '',
         song: '',
         producer: '',
         media: ''
     }
-
     handleOnChange = event => {
         const { name, value } = event.target
 
@@ -20,7 +17,6 @@ class Beatsform extends Component {
             [name]: value
         })
     }
-
     handleSubmit = event => {
         event.preventDefault()
         this.props.createBeat(this.state)
@@ -32,7 +28,6 @@ class Beatsform extends Component {
         })
         this.props.history.push("/beats");
     }
-
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
@@ -52,13 +47,11 @@ class Beatsform extends Component {
         );
     }
 }
-
 const mapDispatchToProps = (dispatch) => {
     return {
         createBeat: () => dispatch(createBeat())
     }
 }
-
 export default connect(null, mapDispatchToProps)(Beatsform);
 // export default connect(null, { createBeat })(Beatsform);
 
