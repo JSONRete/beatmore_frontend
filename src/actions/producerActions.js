@@ -1,7 +1,7 @@
 const url = 'http://localhost:3000'
 
-export const getProducers = (artists) => ({type: 'SEARCH_PRODUCERS', payload: artists})
-// export const loadProducers = (artists) => ({type: 'FETCH_PRODUCERS', payload: artists})
+// export const getProducers = (artists) => ({type: 'SEARCH_PRODUCERS', payload: artists})
+export const loadProducers = (artists) => ({type: 'FETCH_PRODUCERS', payload: artists})
 
 export const searchProducers = (name) => {
     return (dispatch) => {
