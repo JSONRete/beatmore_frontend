@@ -22,10 +22,8 @@ class BeatsList extends Component {
             filterBeatsField = this.props.beats.filter((p) =>  
             p.producer.toLowerCase().includes(this.state.search.toLowerCase()))
         }
-
         return filterBeatsField.map(beat => <BeatCard key={beat.id} beat={beat} />)
     }
-
 
     render() {
         return (
@@ -42,7 +40,7 @@ class BeatsList extends Component {
 };
 
 const mapStateToProps = state => {
-    console.log("test", state)
+    // console.log("test", state)
     return {
         beats: state.beatsReducer.beats,
         // loading: state.loading
