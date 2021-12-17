@@ -31,7 +31,7 @@ class ProducersForm extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                <label className='artist-card'>Producer Lookup</label>
+                <label className='producer-card'>Producer Lookup</label>
                 <input type='text' value={this.state.name} onChange={this.handleOnChange} name='name' placeholder='enter producer name' />
                 <input type='submit' className='submitButton' value='Search Producer' />
                 </form>
