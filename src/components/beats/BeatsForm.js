@@ -31,18 +31,18 @@ class Beatsform extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label className="beatForm">Artist</label>
+                <label className="beat-form">Artist</label>
                 <input type='text' value={this.state.artist} onChange={this.handleOnChange} name='artist' placeholder="enter artist name" />
                 < br />
-                <label className="beatForm">Song</label>
+                <label className="beat-form">Song</label>
                 <input type='text' value={this.state.song} onChange={this.handleOnChange} name='song' placeholder="enter song name" />
                 < br />
-                <label className="beatForm">Producer</label>
+                <label className="beat-form">Producer</label>
                 <input type='text' value={this.state.producer} onChange={this.handleOnChange} name='producer' placeholder="enter producer name" />
                 < br />
-                <label className="beatForm">Media Link</label>
+                <label className="beat-form">Media Link</label>
                 <input type='text' value={this.state.media} onChange={this.handleOnChange} name='media' placeholder="enter media link" />
-                <input type='submit' className='submitButton' value='Save Beat' />
+                <input type='submit' className='submit-button' value='Save Beat' />
             </form>
         );
     }
