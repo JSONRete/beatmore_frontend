@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: #000263;
+}
+
+.producer-card{
+    text-align: center;
+    color: rgb(132, 4, 252);
+    background-color: #ff9035;
+    width: 500px;
+    
+    display: inline-table;
+    padding: 1rem 3rem 0.6rem 7rem;
+    margin: 0.5em 1em 1em 1em;
+    border-radius: 7px;
+    border: 4px solid rgba(247, 247, 6, 0.911);
+    padding: 5px;
+    width: 100px;
+}
