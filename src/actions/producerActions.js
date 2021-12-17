@@ -1,19 +1,30 @@
-const url = 'http://localhost:3000/producer_pull'
+const url = 'http://localhost:3000'
 
-export const loadProducers = (artists) => ({type: 'FETCH_PRODUCERS', payload: artists})
+export const getProducers = (artists) => ({type: 'SEARCH_PRODUCERS', payload: artists})
+// export const loadProducers = (artists) => ({type: 'FETCH_PRODUCERS', payload: artists})
 
-export const fetchProducers = (name) => {
+export const searchProducers = (name) => {
     return (dispatch) => {
         dispatch({type: "LOADING"})
-        fetch(url + `?search=${name}`)
+        fetch(url + `/producer_pull?search=${name}`)
         .then(response => response.json())
         .then(data => {
-            dispatch(loadProducers(data.artists))
-            console.log("see me from producerAction", data)
-            console.log("see me from producerAction", name)
+            dispatch({type: 'SEARCH_PRODUCERS', payload: data})
+            console.log("see me from producerAction, data", data)
+            console.log("see me from producerAction, name ", name)
     })
     }
 }
 
-
-  // placeholder arg
+export const fetchProducers = () => {
+    return (dispatch) => {
+        dispatch({type: "LOADING"})
+        fetch(url + `/producers`)
+        .then(response => response.json())
+        .then(data => {
+            // dispatch(loadProducers(data.artists))
+            console.log("see me from producerAction, data", data)
+    
+    })
+    }
+}
