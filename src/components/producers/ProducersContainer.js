@@ -11,7 +11,8 @@ class ProducersContainer extends Component {
 
     componentDidMount() {
         this.props.fetchProducers()
-        this.props.searchProducers("Kanye West")
+        // this.props.searchProducers("Kanye West")
+        this.props.searchProducers()
 
     }
 
