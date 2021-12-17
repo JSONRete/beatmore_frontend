@@ -41,10 +41,6 @@ export const removeBeat = (beatId) => {
         "Content-Type": "application/json",
         },
     })
-
-    // .then(json => {
-    //     dispatch(addBeat(json))
-    // })
         .then(res => {
         if (res.ok) {
             dispatch(deleteBeat(beatId));
