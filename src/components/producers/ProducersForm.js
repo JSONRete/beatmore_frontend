@@ -24,16 +24,16 @@ class ProducersForm extends Component {
             name: '',
         
         })
-        // this.props.history.push("/beats");
+        // this.props.history.push("/producers");
     }
 
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                <label className='producer-card'>Producer Lookup</label>
+                <label className='producer-form'>Producer Lookup</label>
                 <input type='text' value={this.state.name} onChange={this.handleOnChange} name='name' placeholder='enter producer name' />
-                <input type='submit' className='submitButton' value='Search Producer' />
+                <input type='submit' className='submit-button' value='Search Producer' />
                 </form>
             </div>
         );
