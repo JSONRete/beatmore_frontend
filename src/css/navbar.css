@@ -1,4 +1,4 @@
-.Nav{
+.Nav {
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -15,7 +15,7 @@
     transform: translateY(22px);
 }
 
-.base-nav{
+.base-nav {
     display: inline-block;
     padding: 12px 26px;
     font-size: 24px;
