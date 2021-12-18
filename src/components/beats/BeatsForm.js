@@ -47,12 +47,12 @@ class Beatsform extends Component {
         );
     }
 }
-const mapDispatchToProps = (dispatch) => {
-    return {
-        createBeat: () => dispatch(createBeat())
-    }
-}
-export default connect(null, mapDispatchToProps)(Beatsform);
-// export default connect(null, { createBeat })(Beatsform);
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         createBeat: () => dispatch(createBeat())
+//     }
+// }
+// export default connect(null, mapDispatchToProps)(Beatsform);
+export default connect(null, { createBeat })(Beatsform);
 
 
