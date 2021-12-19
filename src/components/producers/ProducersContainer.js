@@ -13,7 +13,13 @@ class ProducersContainer extends Component {
         this.props.fetchProducers()
         // this.props.searchProducers("Kanye West")
         this.props.searchProducers()
+    }
 
+    componentDidUpdate(name) {
+        // this.props.fetchProducers()
+        // this.props.searchProducers("Kanye West")
+        this.props.searchProducers(name)
+        this.props.history.push("/producers");
     }
 
     render() {
