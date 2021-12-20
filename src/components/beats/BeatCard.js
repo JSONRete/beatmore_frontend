@@ -43,7 +43,7 @@ plusClick = () => {
                 <h4>Artist: {artist}</h4>
                 <h4>Song: {song}</h4>
 
-                <button onClick={this.plusClick}>{this.state.plus}</button>
+                <button className="plus-button" onClick={this.plusClick}>{this.state.plus}</button>
                 <br/>
 
             <button className="delete-button" onClick={this.handleClick}>
