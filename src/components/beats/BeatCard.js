@@ -8,12 +8,23 @@ import { Link } from "react-router-dom";
 
 
 class BeatCard extends Component {
+
+
+state = {
+    plus: 0
+}
+
+plusClick = () => {
+    this.setState({plus: this.state.plus + 1})
+    
+}
+
+
     handleClick = (event) => {
             //   console.log("beatid", this)
                 this.props.removeBeat(this.props.beat.id)
-                this.props.history.push("/beats");
+                this.props.history.push("/");
     }
-            
     render() {
         const {id ,artist, song, producer, media} = this.props.beat
         // console.log("BeatCardLog", props)
@@ -31,15 +42,17 @@ class BeatCard extends Component {
                 </div> 
                 <h4>Artist: {artist}</h4>
                 <h4>Song: {song}</h4>
+
+                <button onClick={this.plusClick}>{this.state.plus}</button>
+                <br/>
+
             <button className="delete-button" onClick={this.handleClick}>
                 Delete Beat
             </button>
         </div>
     );
 }
-
 }
-
 // const mapDispatchToProps = (dispatch) => {
 //     return {
 //         removeBeat: (beat) => dispatch(removeBeat(beat))
