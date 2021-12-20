@@ -38,3 +38,25 @@ body {
 .delete-button {
     background-image: linear-gradient(90deg, rgb(132, 4, 252), rgba(245, 0, 0, 0.774));
 }
+
+
+.plus-button {
+    margin: 2em auto; 
+    -webkit-appearance: none;
+    border: 3px solid rgba(247, 247, 6, 0.911);
+    border-radius: 7px;
+    padding: 1em 3em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: padding-box;
+    position: relative;
+    font-family: Orbitron;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgba(247, 247, 6, 0.911);
+    cursor: pointer;
+}
+
+.plus-button {
+    background-image: linear-gradient(90deg, rgb(132, 4, 252), rgba(245, 0, 0, 0.774));
+}
