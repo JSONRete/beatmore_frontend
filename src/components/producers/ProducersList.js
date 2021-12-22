@@ -5,7 +5,7 @@ import ProducerCard from './ProducerCard'
 class ProducersList extends Component {
 
 makeProducers = () => {
-    console.log("makeProducers()", this.props.artists)
+    // if (this.props.artists.length > 1)
     return this.props.artists.map(producer => <ProducerCard key={producer.id} producer={producer} />)
     
 }
@@ -19,7 +19,7 @@ makeProducers = () => {
 }
 
 const mapStateToProps = state => {
-    console.log("from ProducersList.js", state)
+    // console.log("from ProducersList.js", state)
     return {
         artists: state.producersReducer.artists,
         // loading: state.loading
