@@ -4,6 +4,8 @@ import BeatCard from './BeatCard';
 import FilterField from './FilterField';
 import { ScaleLoader } from 'react-spinners';
 import "../../css/beats/beatslist.css"
+import PlusField from '../PlusField';
+
 
 class BeatsList extends Component {
 
@@ -28,7 +30,7 @@ class BeatsList extends Component {
     render() {
         return (
             <div className="beats-list">
-                <FilterField handleChange={this.inputChange}/>
+                <FilterField handleChange={this.inputChange}/> <PlusField />
                 {this.props.loading ? <h1><ScaleLoader
                     color="#F7F706"
                     height={75}
