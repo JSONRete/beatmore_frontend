@@ -1,13 +1,14 @@
 import React from 'react';
-import "../../css/beats/filterfield.css"
+import "../css/beats/filterfield.css"
 
-const FilterField = (producer) => {
+const PlusField = (count) => {
+    console.log(count)
     return (
         <div id="filter-field">
-            <label htmlFor="filter">Filter by Producer</label>
-            <input type="text" placeholder="enter producer name" onChange={producer.handleChange}/>
+            <label htmlFor="filter">Add to Plus</label>
+            <input type="number" placeholder="enter starting count" onChange={count.handleChange}/>
         </div>
     );
 };
 
-export default FilterField;
+export default PlusField;
