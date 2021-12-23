@@ -11,7 +11,7 @@ class BeatCard extends Component {
 
 
 state = {
-    plus: 0
+    plus: ""
 }
 
 inputChange = (event) => {
