@@ -22,19 +22,6 @@ plusClick = () => {
     this.setState({plus: this.state.plus + 1})
     
 }
-// state = {
-//     plus: ""
-// }
-
-// inputChange = (event) => {
-//     this.setState({plus: event.target.value})
-// }
-
-// plusClick = () => {
-//     this.setState({plus: this.state.plus + this.state.plus})
-    
-// }
-
 
     handleClick = (event) => {
             //   console.log("beatid", this)
