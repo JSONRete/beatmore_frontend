@@ -5,16 +5,16 @@ export const addBeat = (beat) => ({type: 'ADDED_BEAT', payload: beat})
 export const deleteBeat = (beatId) => ({type: "DELETE_BEAT", payload: beatId});
 
 export const fetchBeats = () => {
-    console.log("LOG: C")
+    // console.log("LOG: C")
     return (dispatch) => {
         dispatch({type: "LOADING"})
         fetch(url)
         .then(res => res.json())
         .then(json => {
             dispatch(loadBeats(json))
-    console.log("LOG: D")
+    // console.log("LOG: D")
     })
-    console.log("LOG: C")
+    // console.log("LOG: C")
     }
 }
 
