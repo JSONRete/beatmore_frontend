@@ -3,7 +3,7 @@ const beatsReducer = (state = {beats: [], loading: false}, action) => {
       case "LOADING":
         return { ...state, loading: true };
       case 'FETCH_BEATS':
-        console.log("LOG: E")
+        // console.log("LOG: E")
           // return {...state, loading: false, beats: action.payload}
           return {...state, beats: action.payload, loading: false}
       case 'ADDED_BEAT':
