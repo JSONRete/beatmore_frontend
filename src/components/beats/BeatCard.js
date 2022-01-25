@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 
 
 class BeatCard extends Component {
-
-
 state = {
     plus: ""
 }
