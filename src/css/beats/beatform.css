@@ -7,7 +7,7 @@
     text-align: left;
     color: rgb(132, 4, 252);
   }
- 
+
   form {
     text-align: left;
     background-color: #ff9035;
@@ -21,7 +21,7 @@
     padding: 30px 50px;
 
   }
- 
+
   input {
     border: 5px solid rgba(247, 247, 6, 0.911);
     font-family: Orbitron;
@@ -33,7 +33,7 @@
     background-color: #000263;
     width: 100%;
   }
- 
+
   label {
     color: #4935ff;
     display: block;
@@ -42,7 +42,7 @@
     font-weight: 500;
     margin-bottom: 5px;
   }
- 
+
 
   .submit-button {
     margin: 2em auto; 
