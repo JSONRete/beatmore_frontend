@@ -1,7 +1,4 @@
 import { combineReducers } from 'redux'
-
-// import { beatsReducer } from './beatsReducer'
-// import { producersReducer } from './producersReducer'
 import beatsReducer from './beatsReducer'
 import producersReducer from './producersReducer'
 
