@@ -16,5 +16,3 @@ const Home = () => {
 
 export default Home;
 
-// <img className="home" src={background} style={{ backgroundImage: `url(${background})` }}/>
-
