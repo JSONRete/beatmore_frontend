@@ -1,8 +1,6 @@
 const url = 'http://localhost:3000'
-
 // export const getProducers = (artists) => ({type: 'SEARCH_PRODUCERS', payload: artists})
 export const loadProducers = (artists) => ({type: 'FETCH_PRODUCERS', payload: artists})
-
 export const searchProducers = (name) => {
     return (dispatch) => {
         dispatch({type: "LOADING"})
@@ -11,7 +9,6 @@ export const searchProducers = (name) => {
         .then(data => {
             dispatch({type: 'SEARCH_PRODUCERS', payload: data})
             // console.log("see me from producerAction, data", data)
-            // console.log("see me from producerAction, name ", name)
     })
     }
 }
