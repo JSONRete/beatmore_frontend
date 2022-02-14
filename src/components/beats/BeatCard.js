@@ -22,13 +22,11 @@ plusClick = () => {
 }
 
     handleClick = (event) => {
-            //   console.log("beatid", this)
                 this.props.removeBeat(this.props.beat.id)
                 this.props.history.push("/");
     }
     render() {
         const {id ,artist, song, producer, media} = this.props.beat
-        // console.log("BeatCardLog", props)
     return (
         <div className='beat-card' id={`beat-${id}`}>
             <h4>Producer: <Link to="/producers">{producer}</Link></h4>
