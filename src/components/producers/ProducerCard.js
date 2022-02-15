@@ -5,7 +5,6 @@ import "../../css/producers/producercard.css"
 
 class ProducerCard extends Component {
     render() {
-        // console.log("tttt", this)
         const {id ,name, legal_name, begin_area, birthday} = this.props.producer
     
         return (
