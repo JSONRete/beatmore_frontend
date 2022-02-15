@@ -21,7 +21,6 @@ export const fetchProducers = () => {
         .then(data => {
             dispatch(loadProducers(data.artists))
             // console.log("see me from producerAction, data", data)
-    
     })
     }
 }
