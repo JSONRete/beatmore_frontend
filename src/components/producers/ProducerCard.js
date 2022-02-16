@@ -22,5 +22,4 @@ class ProducerCard extends Component {
 //         producer: state.producersReducer.artists
 //     }
     
-// }
 export default withRouter(connect(null, ) (ProducerCard));
