@@ -11,4 +11,3 @@ const producersReducer = (state = {artists: [], loading: false}, action) => {
     }
 }
 export default producersReducer
-// the reducer is what handles the state of my application
