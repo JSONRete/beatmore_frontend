@@ -19,7 +19,6 @@ makeProducers = () => {
 }
 
 const mapStateToProps = state => {
-    // console.log("from ProducersList.js", state)
     return {
         artists: state.producersReducer.artists,
         // loading: state.loading
