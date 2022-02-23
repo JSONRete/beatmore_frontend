@@ -41,7 +41,6 @@ class BeatsList extends Component {
 };
 
 const mapStateToProps = state => {
-    // console.log("test", state)
     return {
         beats: state.beatsReducer.beats,
         // loading: state.loading
